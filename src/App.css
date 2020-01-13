@@ -1,4 +1,5 @@
-.App {
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +36,48 @@
   to {
     transform: rotate(360deg);
   }
+} */
+.carousel{
+  width:100%;
+}
+.carousel > * {
+  vertical-align: middle;
+}
+
+.slick-active.slick-current .sliderSize img{
+  /* height: 100%; */
+  transform: scale(1,2);
+}
+.slick-active .sliderSize img{
+  /* height: 85%; */
+  transform: scale(1,1.2);
+}
+.sliderSize{
+  display: flex;
+  height: 200px;
+  width: 100%;
+  align-items: center; /* horizontal */
+  /* justify-content: center; vertical */
+}
+.sliderSize img{
+  width: 98%;
+  object-fit: cover;
+  height: 70%;
+  -webkit-transition: height 0.3s; /* For Safari 3.1 to 6.0 */
+  transition: transform 0.3s;
+  /* margin: auto 0px; */
+
+  /* changes required here for nth value */
+  /* height: 70%;
+  margin: auto 0px; */
+}
+
+.carousel .slick-prev{
+  z-index:9;
+  left: 25px;
+}
+
+.carousel .slick-next{
+  z-index:9;
+  right: 25px;
 }
